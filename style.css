@@ -1,4 +1,169 @@
-body{
-    padding:0;
-    margin:0;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image:url(E:/pratham/Project/background2.png);
+    
 }
+a,button{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.header-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: black;
+}
+.header-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(192, 192, 192);
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logo{
+    color: white;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+li{
+    font-size: 12px;
+    
+}
+.na-2 li{
+    padding-left: 40px;
+    
+}
+.na-1 li{
+    padding-right: 70px;
+    justify-content: space-between;
+    
+}
+.na-1 li:hover{
+    color: red;
+}
+.container1{
+    margin-top: 250px;
+    margin-left: 50px;
+    font-family: sans-serif ;
+    
+}
+.container1 h1{
+    font-size: 70px;
+}
+.container1 h4{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.container2{
+    margin-top: 500px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: rgb(225, 159, 159); 
+    flex-basis: 31%;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    width: 80%;
+    margin: auto;
+    margin-top: 600px;
+    transition: 0.5s;
+    margin-bottom: 200px;
+}
+.container2 h2{
+    text-align: center;
+    font-size: 50px;
+}
+.container2 p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.container2:hover{
+     border: 2px solid rgba(0, 0, 0, 0.557);
+}
+.card{
+    float: right;
+    position: relative;
+    width: 520px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 50px;
+    color: white;
+    
+}
+ img{
+    width: 250px;
+    transform: translateY(-50%,-50%) rotate(-25deg);
+    animation-name: shoes;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes shoes{
+    from{
+      width: 250px;
+    }
+    to{
+      width: 360px;
+    }
+} 
+.size{
+    margin-top: 20px;
+}
+.card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.card:hover:before{
+    clip-path: circle(350px at 80% 20%); 
+}
+.card:after{
+    content: 'NIKE';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12px;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+.card .imgbx{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 10000;
+   width: 100%; 
+   height: 220px;
+   transition: 0.5s;
+}
+.content{
+    margin-top: 400px;
+    color: royalblue;
+    font-size: 30px;
+    float: left;
+    margin-left: 10px;
+}
+    
