@@ -2,10 +2,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image:url(E:/pratham/Project/background2.png);
-    
+    background-color: white;
 }
-a,button{
+nav{
+    background: none;
+}
+a{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(192, 192, 192);
+}
+a.logo{
+    background-color: black;
+}
+button{
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
@@ -24,6 +36,8 @@ a,button{
     align-items: center;
     padding: 20px 5%;
     background-color: rgb(192, 192, 192);
+    
+    
 }
 button{
     padding: 9px 25px;
@@ -38,14 +52,17 @@ button{
 ul{
     display: flex;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 50px;
+    
 }
 li{
     font-size: 12px;
+    background-color: rgb(192, 192, 192);
     
 }
 .na-2 li{
     padding-left: 40px;
+    
     
 }
 .na-1 li{
@@ -53,13 +70,11 @@ li{
     justify-content: space-between;
     
 }
-.na-1 li:hover{
-    color: red;
-}
 .container1{
     margin-top: 250px;
     margin-left: 50px;
     font-family: sans-serif ;
+    color: black;
     
 }
 .container1 h1{
@@ -70,32 +85,26 @@ li{
     margin-left: 20px;
 }
 .container2{
-    margin-top: 500px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background: rgb(225, 159, 159); 
-    flex-basis: 31%;
-    margin-bottom: 10%;
-    padding: 20px 12px;
-    width: 80%;
-    margin: auto;
-    margin-top: 600px;
-    transition: 0.5s;
-    margin-bottom: 200px;
+   border: 2px solid black;
+   box-sizing: border-box;  
+   display: inline-block;
+   background-color: rgb(234, 124, 124);
+   border-radius: 20px;
+   text-align: center;
+   font-family: "Oswald";
+   margin-left: 40px;
+   
 }
-.container2 h2{
-    text-align: center;
-    font-size: 50px;
+.container2 h3{
+   font-size: 50px;
+   background-color: rgb(234, 124, 124);
 }
 .container2 p{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
+   font-size: 30px;
+   margin-top: 20px;
+   background-color: rgb(234, 124, 124);
 }
-.container2:hover{
-     border: 2px solid rgba(0, 0, 0, 0.557);
-}
-.card{
+/*.card{
     float: right;
     position: relative;
     width: 520px;
@@ -114,6 +123,7 @@ li{
     animation-name: shoes;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    background-color:#232323 ;
 }
 @keyframes shoes{
     from{
@@ -158,6 +168,7 @@ li{
    width: 100%; 
    height: 220px;
    transition: 0.5s;
+   background-color: #232323;
 }
 .content{
     margin-top: 400px;
@@ -165,5 +176,119 @@ li{
     font-size: 30px;
     float: left;
     margin-left: 10px;
-}
+}*/
+.Services{
+    margin-top: 600px;
+    margin-bottom: 4px;
     
+}
+.container2 button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.container3{
+    border: 2px solid black;
+    box-sizing: border-box;  
+    display: block;
+    background-color: rgb(234, 124, 124);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Oswald";
+   
+    float: right;
+    margin-right: 40px;
+    
+ }
+ .container3 h3{
+    font-size: 50px;
+    background-color: rgb(234, 124, 124);
+ }
+ .container3 p{
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: rgb(234, 124, 124);
+ }
+ .container3 button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+ }
+ .container4{
+    border: 2px solid black;
+    box-sizing: border-box;  
+    display:inline-block;
+    background-color: rgb(234, 124, 124);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Oswald";
+    margin-top: 530px;
+    clear: both;
+    margin-left: 40px;
+ }
+ .container4 h3{
+    font-size: 50px;
+    background-color: rgb(234, 124, 124);
+ }
+ .container4 p{
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: rgb(234, 124, 124);
+ }
+ .container4 button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+ }
+ .footer{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    background-image: url(Images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+ }      
+ .footer h4
+ {
+     color: white;
+     margin-bottom: 25px;
+     margin-top: 20px;
+     font-weight: 600;
+     display: inline-block;
+     background: none;
+ }
+ .icons 
+{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    display: inline-block;
+    background: none;
+
+}
+.footer p
+{
+  color: rgb(230, 94, 94);
+  font-weight: bold;
+  display: inline-block;
+  background: none;
+}
+.Services{
+    background-image:url(Images/background.jpg);
+    background-size: cover;
+    color: black;
+}
+.video{
+    background-color: rgb(234, 124, 124);
+}
+.fa{
+    background: none;
+} 
+video{
+    background: none;
+}   
