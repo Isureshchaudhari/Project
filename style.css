@@ -1,49 +1,63 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* Sass Template */
+/* global classes */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
+/* Typography Classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
 }
-a,button{
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
+
+.font-rale {
+  font-family: "Raleway", cursive;
 }
-.header-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color:black;
+
+.font-rubik {
+  font-family: "Rubik", cursive;
 }
-.header-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: rgb(192, 192, 192);
+
+.font-size-12 {
+  font-size: 12px;
 }
-button{
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 5px;
+
+.font-size-14 {
+  font-size: 14px;
 }
-.logo{
-    color: white;
+
+.font-size-16 {
+  font-size: 16px;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    font-size: 20px;
+
+.font-size-20 {
+  font-size: 20px;
 }
-li{
-    font-size: 12px;
+
+/* Color Template */
+.color-primary {
+  color: #003859;
 }
-.na-2 li{
-    padding-left: 40px;
+
+.color-primary-bg {
+  background: #003859;
 }
-.na-1 li{
-    padding-right: 70px;
+
+.color-second {
+  color: #00A5C4;
 }
+
+.color-second-bg {
+  background: #00A5C4;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+/*# sourceMappingURL=style.css.map */
