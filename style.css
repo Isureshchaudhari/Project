@@ -1,63 +1,98 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
-/* Sass Template */
+/* colors */
+.color-primary{
+    color: #003859;
+}
+.color-primary-bg{
+    background: #003859;
+}
+.color-second{
+    color: #00A5C4;
+}
+.color-second-bg{
+    background: #00A5C4;
+}
+.color-yellow{
+    color: #FFD289;
+}
+.color-yellow-bg{
+    background: #FFD289;
+}
+
+/* typography */
+.font-baloo{
+    font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale{
+    font-family: "Raleway", cursive;
+}
+
+.font-rubik{
+    font-family: "Rubik", cursive;
+}
+
+.font-size-12{
+    font-size: 12px;
+}
+
+.font-size-14{
+    font-size: 14px;
+}
+
+.font-size-16{
+    font-size: 16px;
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+
 /* global classes */
-button, button:focus {
-  outline: none !important;
-  box-shadow: none !important;
+
+button, button:focus{
+    outline:none !important;
+    box-shadow: none !important;
 }
 
-/* Typography Classes */
-.font-baloo {
-  font-family: "Baloo Thambi 2", cursive;
-}
+/* top sale template */
 
-.font-rale {
-  font-family: "Raleway", cursive;
-}
 
-.font-rubik {
-  font-family: "Rubik", cursive;
-}
+    .owl-carousel .item .product a{
+        overflow: hidden;
+    }
 
-.font-size-12 {
-  font-size: 12px;
-}
+    .owl-carousel .item .product img{
+        transition: transform .5s ease;
+    }
 
-.font-size-14 {
-  font-size: 14px;
-}
+    .owl-carousel .item .product img:hover{
+        transform: scale(1.1);
+    }
 
-.font-size-16 {
-  font-size: 16px;
-}
+    .owl-carousel .owl-nav button{
+        position: absolute;
+        top: 30%;
+        outline: none;
+    }
 
-.font-size-20 {
-  font-size: 20px;
-}
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 0;
+    }
 
-/* Color Template */
-.color-primary {
-  color: #003859;
-}
+    .owl-carousel .owl-nav button.owl-prev span{
+        font-size: 35px;
+        color: #003859;
+        margin-left: -4rem;
+        padding: 0 1rem;
+    }
 
-.color-primary-bg {
-  background: #003859;
-}
+    .owl-carousel .owl-nav button.owl-next{
+        right: 0;
+    }
 
-.color-second {
-  color: #00A5C4;
-}
-
-.color-second-bg {
-  background: #00A5C4;
-}
-
-.color-yellow {
-  color: #FFD289;
-}
-
-.color-yellow-bg {
-  background: #FFD289;
-}
-
-/*# sourceMappingURL=style.css.map */
+    .owl-carousel .owl-nav button.owl-next span{
+        font-size: 35px;
+        color: #003859;
+        margin-right: -4rem;
+        padding: 0 1rem;
+    }
