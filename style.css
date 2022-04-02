@@ -96,3 +96,10 @@ button, button:focus{
         margin-right: -4rem;
         padding: 0 1rem;
     }
+
+    /* Categories Section Template */
+
+    .grid .grid-item{
+        margin-right: 3.5rem;
+        margin-top: 1rem;
+    }
