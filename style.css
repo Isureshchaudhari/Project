@@ -1,294 +1,384 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+/* colors */
+.color-primary{
+  color: #003859;
 }
-nav{
-    background: none;
+.color-primary-bg{
+  background: #003859;
 }
-a{
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    background-color: rgb(192, 192, 192);
+.color-second{
+  color: #00A5C4;
 }
-a.logo{
-    background-color: black;
+.color-second-bg{
+  background: #00A5C4;
 }
-button{
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
+.color-yellow{
+  color: #FFD289;
 }
-.header-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: black;
+.color-yellow-bg{
+  background: #FFD289;
 }
-.header-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: rgb(192, 192, 192);
-    
-    
+
+/* typography */
+.font-baloo{
+  font-family: "Baloo Thambi 2", cursive;
 }
-button{
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.font-rale{
+  font-family: "Raleway", cursive;
 }
-.logo{
-    color: white;
+
+.font-rubik{
+  font-family: "Rubik", cursive;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    font-size: 50px;
-    
+
+.font-size-12{
+  font-size: 12px;
 }
-li{
-    font-size: 12px;
-    background-color: rgb(192, 192, 192);
-    
+
+.font-size-14{
+  font-size: 14px;
 }
-.na-2 li{
-    padding-left: 40px;
-    
-    
+
+.font-size-16{
+  font-size: 16px;
 }
-.na-1 li{
-    padding-right: 70px;
-    justify-content: space-between;
-    
+
+.font-size-20{
+  font-size: 20px;
 }
-.container1{
-    margin-top: 250px;
-    margin-left: 50px;
-    font-family: sans-serif ;
-    color: black;
-    
+
+/* global classes */
+
+button, button:focus{
+  outline:none !important;
+  box-shadow: none !important;
 }
-.container1 h1{
-    font-size: 70px;
+
+/* top sale template */
+
+
+  .owl-carousel .item .product a{
+      overflow: hidden;
+  }
+
+  .owl-carousel .item .product img{
+      transition: transform .5s ease;
+  }
+
+  .owl-carousel .item .product img:hover{
+      transform: scale(1.1);
+  }
+
+  .owl-carousel .owl-nav button{
+      position: absolute;
+      top: 30%;
+      outline: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev{
+      left: 0;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev span{
+      font-size: 35px;
+      color: #003859;
+      margin-left: -4rem;
+      padding: 0 1rem;
+  }
+
+  .owl-carousel .owl-nav button.owl-next{
+      right: 0;
+  }
+
+  .owl-carousel .owl-nav button.owl-next span{
+      font-size: 35px;
+      color: #003859;
+      margin-right: -4rem;
+      padding: 0 1rem;
+  }
+
+  /* Categories Section Template */
+ /* mens page  sports page kids page */
+ .container{
+  border: 2px solid black;
+  display: inline-block;
+  width: 350px;
+  padding-bottom: 30%;
+  text-align: center;
+  
 }
-.container1 h4{
-    font-size: 30px;
-    margin-left: 20px;
+.container:hover::before{
+  width: 350px;
+  
 }
-.container2{
-   border: 2px solid black;
-   box-sizing: border-box;  
-   display: inline-block;
-   background-color: rgb(234, 124, 124);
-   border-radius: 20px;
+.container:hover::after{
+  width: 350px;
+  padding-bottom: 30%;
+}
+.title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+
+img{
+  width: 250px;
+}
+h4{
+  font-weight: bold;
+}
+section{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card1{
+  margin-right: 400px;
+  width: 300px;
+  border: 1px solid black;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: rgb(226, 180, 180);
+  
+}
+.card1:hover{
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.card2{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 1px solid black;
+  margin-right: 400px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: rgb(226, 180, 180);
+}
+.card2:hover{
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.card3{
+  width: 300px;
+  border: 1px solid black;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: rgb(226, 180, 180);
+}
+.card3:hover{
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.card4{
+  width: 300px;
+  border: 1px solid black;
+  margin-right: 400px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: rgb(226, 180, 180);
+}
+.card4:hover{
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.card5{
+  width: 300px;
+  border: 1px solid black;
+  margin-right: 400px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: rgb(226, 180, 180);
+}
+.card5:hover{
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.card6{
+  width: 300px;
+  border: 1px solid black;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: rgb(226, 180, 180);
+}
+.card6:hover{
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+.rating{
+  cursor: pointer;
+}
+.banner{
+  width: 80%;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+ /* add to cart page */
+ .cart{
    text-align: center;
-   font-family: "Oswald";
-   margin-left: 40px;
-   
+   font-family: sans-serif;
+   margin-top: 50px;
+   font-weight: bold;
+ }
+.cart-page{
+   margin: 80px auto;
+   border: 2px solid black;
 }
-.container2 h3{
-   font-size: 50px;
-   background-color: rgb(234, 124, 124);
-}
-.container2 p{
-   font-size: 30px;
-   margin-top: 20px;
-   background-color: rgb(234, 124, 124);
-}
-/*.card{
-    float: right;
-    position: relative;
-    width: 520px;
-    height: 450px;
-    background: #232323;
-    border-radius: 20px;
-    overflow: hidden;
-    text-align: center;
-    margin-right: 50px;
-    color: white;
-    
-}
- img{
-    width: 250px;
-    transform: translateY(-50%,-50%) rotate(-25deg);
-    animation-name: shoes;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    background-color:#232323 ;
-}
-@keyframes shoes{
-    from{
-      width: 250px;
-    }
-    to{
-      width: 360px;
-    }
-} 
-.size{
-    margin-top: 20px;
-}
-.card:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+table{
     width: 100%;
-    height: 100%;
-    background: #9bdc28;
-    clip-path: circle(150px at 80% 20%);
-    transition: 0.5s ease-in-out;
+    border-collapse: collapse;
 }
-.card:hover:before{
-    clip-path: circle(350px at 80% 20%); 
+.cart-info{
+   display: flex;
+   flex-wrap: wrap;
 }
-.card:after{
-    content: 'NIKE';
-    position: absolute;
-    top: 30%;
-    left: -20%;
-    font-size: 12px;
-    font-weight: 800;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.04);
+th{
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background: #ff523b;
+  font-weight: normal;
 }
-.card .imgbx{
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   z-index: 10000;
-   width: 100%; 
-   height: 220px;
-   transition: 0.5s;
-   background-color: #232323;
+td{
+  padding: 10px 5px;
 }
-.content{
-    margin-top: 400px;
-    color: royalblue;
-    font-size: 30px;
-    float: left;
-    margin-left: 10px;
-}*/
-.Services{
-    margin-top: 600px;
-    margin-bottom: 4px;
-    
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
 }
-.container2 button{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-radius: 20px;
+td a{
+   color: #ff523b;
+   font-size: 12px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 580px;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+/* Sell Here page */
+.sell{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 .container3{
-    border: 2px solid black;
-    box-sizing: border-box;  
-    display: block;
-    background-color: rgb(234, 124, 124);
-    border-radius: 20px;
-    text-align: center;
-    font-family: "Oswald";
-   
-    float: right;
-    margin-right: 40px;
-    
- }
- .container3 h3{
-    font-size: 50px;
-    background-color: rgb(234, 124, 124);
- }
- .container3 p{
-    font-size: 30px;
-    margin-top: 20px;
-    background-color: rgb(234, 124, 124);
- }
- .container3 button{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-radius: 20px;
- }
- .container4{
-    border: 2px solid black;
-    box-sizing: border-box;  
-    display:inline-block;
-    background-color: rgb(234, 124, 124);
-    border-radius: 20px;
-    text-align: center;
-    font-family: "Oswald";
-    margin-top: 530px;
-    clear: both;
-    margin-left: 40px;
- }
- .container4 h3{
-    font-size: 50px;
-    background-color: rgb(234, 124, 124);
- }
- .container4 p{
-    font-size: 30px;
-    margin-top: 20px;
-    background-color: rgb(234, 124, 124);
- }
- .container4 button{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-radius: 20px;
- }
- .footer{
-    text-align: center;
-    width: 100%;
-    padding: 30px 0;
-    background-image: url(Images/footer.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
- }      
- .footer h4
- {
-     color: white;
-     margin-bottom: 25px;
-     margin-top: 20px;
-     font-weight: 600;
-     display: inline-block;
-     background: none;
- }
- .icons 
-{
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-    display: inline-block;
-    background: none;
+  display: flex;
+  border: 2px solid black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  
+}
+.products-details input{
+  margin-top: 10px;
+  
+}
+.products-details textarea{
+  margin-top: 10px;
+}
+td input{
+  
+    width: 150px;
+    height: 30px;
+    padding: 5px;
 
 }
-.footer p
-{
-  color: rgb(230, 94, 94);
+.submit{
+  background-color: #ff523b;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  height: 40px;
+}
+h5{
+  font-family: sans-serif;
   font-weight: bold;
-  display: inline-block;
-  background: none;
+  
 }
-.Services{
-    background-image:url(Images/background.jpg);
-    background-size: cover;
-    color: black;
-}
-.video{
-    background-color: rgb(234, 124, 124);
-}
-.fa{
-    background: none;
-} 
-video{
-    background: none;
-}   
+
+
+/* footer */
+  .grid .grid-item{
+      margin-right: 3.5rem;
+      margin-top: 1rem;
+  }
+  footer{
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .container2 .sec{
+     margin-right: 30px;
+  }
+  .container2 .sec.aboutus{
+    width: 40%;
+    float: right;
+  }
+  .container2 .sec.aboutus h4{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+  }
+  .icons{
+    margin-top: 20px;
+    display: flex;
+   
+  }
+  .icons li{
+    list-style: none;
+  }
+  .icons li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .icons li a:hover{
+    background: #f00;
+  }
+  .icons li a .fa{
+    color: #fff;
+    font-size: 20px;
+  }
+  
+
+  
+  
+
+  
