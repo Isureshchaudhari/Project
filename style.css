@@ -98,28 +98,19 @@ button, button:focus{
   }
 
   /* Categories Section Template */
+
+  .grid .grid-item{
+      margin-right: 3.5rem;
+      margin-top: 1rem;
+  }
+
  /* mens page  sports page kids page */
- .container{
-  border: 2px solid black;
-  display: inline-block;
-  width: 350px;
-  padding-bottom: 30%;
-  text-align: center;
-  
-}
-.container:hover::before{
-  width: 350px;
-  
-}
-.container:hover::after{
-  width: 350px;
-  padding-bottom: 30%;
-}
-.title{
+
+/* .title{
   text-align: center;
   margin-bottom: 50px;
   font-family: sans-serif;
-}
+} */
 
 img{
   width: 250px;
@@ -130,78 +121,31 @@ h4{
 section{
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   
 }
-.card1{
-  margin-right: 400px;
-  width: 300px;
+.card1, .card2, .card3{
+  width: 400px;
   border: 1px solid black;
   transition: 0.5s;
   box-sizing: border-box;
-  background-color: rgb(226, 180, 180);
-  
+  background-color: rgb(84, 190, 216);
+  border-radius: 3px;
+  justify-content:space-evenly;
 }
 .card1:hover{
   box-shadow: 0 0 20px 0px rgb(0, 0, 0);
 }
-.card2{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  border: 1px solid black;
-  margin-right: 400px;
-  transition: 0.5s;
-  box-sizing: border-box;
-  background-color: rgb(226, 180, 180);
-}
+
 .card2:hover{
   box-shadow: 0 0 20px 0px rgb(0, 0, 0);
 }
-.card3{
-  width: 300px;
-  border: 1px solid black;
-  transition: 0.5s;
-  box-sizing: border-box;
-  background-color: rgb(226, 180, 180);
-}
+
 .card3:hover{
   box-shadow: 0 0 20px 0px rgb(0, 0, 0);
 }
-.card4{
-  width: 300px;
-  border: 1px solid black;
-  margin-right: 400px;
-  transition: 0.5s;
-  box-sizing: border-box;
-  background-color: rgb(226, 180, 180);
-}
-.card4:hover{
-  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
-}
-.card5{
-  width: 300px;
-  border: 1px solid black;
-  margin-right: 400px;
-  transition: 0.5s;
-  box-sizing: border-box;
-  background-color: rgb(226, 180, 180);
-}
-.card5:hover{
-  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
-}
-.card6{
-  width: 300px;
-  border: 1px solid black;
-  transition: 0.5s;
-  box-sizing: border-box;
-  background-color: rgb(226, 180, 180);
-}
-.card6:hover{
-  box-shadow: 0 0 20px 0px rgb(0, 0, 0);
-}
+
 .rating{
   cursor: pointer;
 }
@@ -284,6 +228,7 @@ th:last-child{
   align-items: center;
   margin-bottom: 20px;
   font-family: sans-serif;
+  height: 800px;
   
 }
 .products-details input{
@@ -294,7 +239,7 @@ th:last-child{
   margin-top: 10px;
 }
 td input{
-  
+
     width: 150px;
     height: 30px;
     padding: 5px;
@@ -312,73 +257,3 @@ h5{
   font-weight: bold;
   
 }
-
-
-/* footer */
-  .grid .grid-item{
-      margin-right: 3.5rem;
-      margin-top: 1rem;
-  }
-  footer{
-    position: relative;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    height: auto;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .container2{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .container2 .sec{
-     margin-right: 30px;
-  }
-  .container2 .sec.aboutus{
-    width: 40%;
-    float: right;
-  }
-  .container2 .sec.aboutus h4{
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-  }
-  .icons{
-    margin-top: 20px;
-    display: flex;
-   
-  }
-  .icons li{
-    list-style: none;
-  }
-  .icons li a{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  .icons li a:hover{
-    background: #f00;
-  }
-  .icons li a .fa{
-    color: #fff;
-    font-size: 20px;
-  }
-  
-
-  
-  
-
-  
