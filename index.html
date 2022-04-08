@@ -42,23 +42,28 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">On Sale</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Category</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Mens</a>
+                    <a class="dropdown-item" href="#">Kids</a>
+                    <a class="dropdown-item" href="#">Sports</a>
+                    <a class="dropdown-item" href="#">Sneakers</a>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Blog</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Category<i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Products</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Coming Soon</a>
+                  <a class="nav-link" href="#">Refurbished Products</a>
                 </li>
               </ul>
               <form action="#" class="font-size-14 font-rale">
@@ -230,7 +235,7 @@
         <!-- Categories -->
         <section id="categories">
           <div class="container">
-            <h4 class="font-rubik font-size-20">Categories</h4>
+            <h4 class="font-rubik font-size-20"><a id="category">Categories</a></h4>
             <div id="filters" class="button-group text-end font-baloo font-size-15">
               <button class="btn is-checked" data-filter="">All Products</button>
               <button class="btn" data-filter=".Mens">Mens</button>
