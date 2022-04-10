@@ -32,54 +32,186 @@
 
       <!-- Start Primary Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e40046;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./products/logo8.png" alt="" style="height: 100px; width: 100px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav m-auto font-rubik">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">On Sale</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Category</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Category<i class="fas fa-chevron-down"></i></a>
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Refurbished</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sell Here</a>
-                </li>
-              </ul>
-              <form action="#" class="font-size-14 font-rale">
-                  <a href="#" class="py-2 rounded-pill color-primary-bg">
-                      <span class="font-size-15 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                      <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
-                  </a>
-              </form>
-            </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index">Footwear Shoppee</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto font-rubik">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">On Sale</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="mens.html">Mens</a>
+                  <a class="dropdown-item" href="kids.html">Kids</a>
+                  <a class="dropdown-item" href="sports.html">Sports</a>
+                  <a class="dropdown-item" href="">Sneakers</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Category<i class="fas fa-chevron-down"></i></a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="refurbished.html">Refurbished</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sell_here.html">Sell here</a>
+              </li>
+            </ul>
+            <form action="#" class="font-size-14 font-rale">
+                <a href="#" class="py-2 rounded-pill color-primary-bg">
+                    <span class="font-size-15 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                </a>
+            </form>
           </div>
-      </nav>
-      <!-- End Primary Navigation -->  
+        </div>
+    </nav>
+    <!-- End Primary Navigation --> 
   </header>
   <!-- End Header -->
+  <main>
     <h1 class="title text-center p-1 m-1">MENS</h1>
     <hr>
+    <!-- Top sale -->
+    <section id="top-sale">
+      <div class="container py-5">
+        <h4 class="font-rubik font-size-20">Top Sale</h4>
+          <hr>
+          <!-- owl carousel -->
+          <div class="owl-carousel owl-theme border border-2">
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./products/1.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
+                <div class="text-center">
+                  <h6>Sports Shoes</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$24</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./products/2.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
+                <div class="text-center">
+                  <h6>Sports Shoes</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$24</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./products/3.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
+                <div class="text-center">
+                  <h6>Sports Shoes</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$24</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./products/4.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
+                <div class="text-center">
+                  <h6>Sports Shoes</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$24</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./products/5.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
+                <div class="text-center">
+                  <h6>Sports Shoes</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$24</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product font-rale">
+                <a href="#"><img src="./products/6.jpg" alt="product" class="img-fluid"  style="height:200px; width:200px;"></a>
+                <div class="text-center">
+                  <h6>Sports Shoes</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="price py-2">
+                    <span>$24</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h4>
+      </div>
+    </section>
+    <!-- End Top Sale -->
     <section>
      <div class="card1">
     <div class="item py-2">
       <div class="product font-rale">
-        <a href="#"><img src="products/sports1.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
+        <a href="#"><img src="products/mens1.jpg" alt="product" class="img-fluid" style="height:200px; width:200px;"></a>
         <div class="text-center">
           <h6>Mens Shoes</h6>
           <div class="rating text-warning font-size-12">
@@ -344,6 +476,7 @@
   <section>
     <img class="banner" src="Images/sports banner.jpg">
   </section>
+</main>
 
  <!-- Start Footer -->
  <footer id="footer" class="bg-dark text-white py-5">

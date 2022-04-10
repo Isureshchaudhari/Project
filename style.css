@@ -103,3 +103,147 @@ button, button:focus{
         margin-right: 3.5rem;
         margin-top: 1rem;
     }
+
+    /* mens page  sports page kids page */
+
+/* .title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+} */
+
+img{
+    width: 250px;
+  }
+  h4{
+    font-weight: bold;
+  }
+  section{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #000000; */
+  }
+  .card1, .card2, .card3{
+    width: 400px;
+    border: 1px solid black;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background-color: rgb(84, 190, 216);
+    border-radius: 3px;
+    justify-content:space-evenly;
+  }
+  .card1:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+  }
+  
+  .card2:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+  }
+  
+  .card3:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+  }
+  
+  .rating{
+    cursor: pointer;
+  }
+  .banner{
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+   /* add to cart page */
+   .cart{
+     text-align: center;
+     font-family: sans-serif;
+     margin-top: 50px;
+     font-weight: bold;
+   }
+  .cart-page{
+     margin: 80px auto;
+     border: 2px solid black;
+  }
+  table{
+      width: 100%;
+      border-collapse: collapse;
+  }
+  .cart-info{
+     display: flex;
+     flex-wrap: wrap;
+  }
+  th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+  }
+  td{
+    padding: 10px 5px;
+  }
+  td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+  }
+  td a{
+     color: #ff523b;
+     font-size: 12px;
+     border: 1px solid black;
+     border-radius: 5px;
+  }
+  td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  .total-price{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 580px;
+  }
+  td:last-child{
+    text-align: right;
+  }
+  th:last-child{
+    text-align: right;
+  }
+  /* Sell Here page */
+  .container3{
+      display: inline-block;
+      border: 2px solid black;
+      justify-content: center;
+      align-items: center;
+      margin-left: 540px;
+      margin-bottom: 20px;
+      width: 500px;
+      padding: 20px;
+      padding-left: 50px;
+      background-color:cornsilk;
+      font-family: sans-serif;
+  }
+  .sell{
+      text-align: center;
+  }
+
+  .back-body{
+      background-color: #d1cac0;
+  }
+  .submit{
+      background-color: #ff523b;
+      color: white;
+      border-radius: 10px;
+      width: 150px;
+      transition: 0.5s;
+      border: none;
+      height: 35px;
+  }
+  .submit:hover{
+      background-color: #ff2b0f;
+  }
