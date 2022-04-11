@@ -104,56 +104,19 @@ button, button:focus{
         margin-top: 1rem;
     }
 
-    /* mens page  sports page kids page */
+    /* mens sports kids page */
 
-/* .title{
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: sans-serif;
-} */
+    .column-1{
+      display: flex;
+      justify-content:space-around;
+    }
+    .division{
+      border: 1px solid black;
+      padding: 15px;
+      padding-top: 0%;
+      margin: 10px;
+    }
 
-img{
-    width: 250px;
-  }
-  h4{
-    font-weight: bold;
-  }
-  section{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    /* background: #000000; */
-  }
-  .card1, .card2, .card3{
-    width: 400px;
-    border: 1px solid black;
-    transition: 0.5s;
-    box-sizing: border-box;
-    background-color: rgb(84, 190, 216);
-    border-radius: 3px;
-    justify-content:space-evenly;
-  }
-  .card1:hover{
-    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
-  }
-  
-  .card2:hover{
-    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
-  }
-  
-  .card3:hover{
-    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
-  }
-  
-  .rating{
-    cursor: pointer;
-  }
-  .banner{
-    width: 80%;
-    border: 1px solid black;
-    margin-top: 20px;
-  }
    /* add to cart page */
    .cart{
      text-align: center;
@@ -225,16 +188,17 @@ img{
       width: 500px;
       padding: 20px;
       padding-left: 50px;
-      background-color:cornsilk;
+      background-color:whitesmoke;
       font-family: sans-serif;
+      border-radius: 5px;
   }
   .sell{
       text-align: center;
   }
-
+/* 
   .back-body{
       background-color: #d1cac0;
-  }
+  } */
   .submit{
       background-color: #ff523b;
       color: white;
@@ -246,4 +210,91 @@ img{
   }
   .submit:hover{
       background-color: #ff2b0f;
+  }
+
+  /* payment page */
+  
+  .payment{
+    /* background:linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%); */
+    height: 80vh;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 60vh;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    background-color: white;
+    margin-left: 350px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #ececec;
+  }
+
+  .payment .form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .payment .form .row .col{
+    flex: 1 1 250px;
+  }
+  .payment .form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .inputbox{
+    margin-top: 15px;
+  }
+  .inputbox span{
+    margin-bottom: 5px;
+    display: block;
+    
+  }
+   input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10 px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  input:focus{
+    border: 1px solid black;
+  }
+  .payment .form .row .col .flex{
+    display: flex;
+    gap: 15px;
+  }
+  .payment .form .row .col .flex .inputbox{
+    margin-top: 5px;
+  }
+  .payment .form .row .col .inputbox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  .submit-btn{
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+    background: #27ae60;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-sizing: border-box;
+  }
+  .submit-btn:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
   }
